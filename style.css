@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=K2D:wght@200&family=Kalam&family=Outfit:wght@900&family=Poppins:wght@100&family=Roboto:wght@300&family=Rochester&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: flex;
+}
+
+.heading {
+  color: rgb(135, 110, 125);
+  width: 82%;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Rochester";
+  font-size: 3rem;
+}
+
+.navbar {
+  width: 17%;
+  height: 100vh;
+  background-color: rgb(174, 147, 163);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  z-index: 10;
+  position: fixed;
+}
+.navbar .links {
+  margin: auto;
+}
+.navbar .links a {
+  color: white;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  background-color: rgb(161, 134, 150);
+  transition: 0.5s;
+  position: relative;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+.navbar .links a i {
+  color: white;
+}
+.navbar .links a::before {
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -1.25rem;
+  background-color: rgb(161, 134, 150);
+  top: 0.65rem;
+  transition: 0.5s;
+}
+.navbar .links a:hover {
+  background-color: rgb(135, 110, 125);
+}
+.navbar .links a:hover::before {
+  background-color: rgb(135, 110, 125);
+}
+
+.main {
+  width: 82%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.main .open {
+  transition: 1s;
+  opacity: 0;
+  transform: scale(0.1) translateY(50%);
+  z-index: -5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+}
+.main .open::-webkit-scrollbar {
+  background-color: rgb(199, 191, 195);
+  width: 0.5rem;
+}
+.main .open::-webkit-scrollbar-thumb {
+  background-color: rgb(99, 86, 92);
+  border-radius: 1rem;
+}
+.main .open .ex {
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.main .open .ex i {
+  color: rgb(135, 110, 125);
+}
+.main .card {
+  height: 30rem;
+  grid-column: 1fr;
+  position: relative;
+}
+.main .card img {
+  height: 17rem;
+}
+.main .card .btn {
+  background-color: rgb(174, 147, 163);
+  color: white;
+  transition: 0.5s;
+}
+.main .card .btn:hover {
+  background-color: rgb(222, 205, 215);
+  color: rgb(59, 52, 56);
+  border-color: rgb(59, 52, 56);
+}
+.main .card .btn:active {
+  border-color: black;
+  color: black;
+  background-color: white;
+}
+.main .card-body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.close123 {
+  opacity: 1 !important;
+  transform: none !important;
+  z-index: 7 !important;
+}/*# sourceMappingURL=style.css.map */
